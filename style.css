@@ -1,0 +1,53 @@
+/* Full-screen layout for welcome page */
+body {
+    background-image: 'sampletheme.jpg';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Welcome Text Container */
+#welcome-container {
+    background-image: url('sampletheme.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#welcome-text {
+    font-size: 3rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: white; /* Choose a contrasting color for the text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+/* Animation for typing text */
+#welcome-text span {
+    display: inline-block;
+    opacity: 0;
+    animation: type 0.1s forwards; 
+}
+
+@keyframes type {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#music-player-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
